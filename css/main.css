@@ -64,10 +64,6 @@ img {
   padding: 0;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-cl);
-}
 
 body {
   font-family: var(--main-font);
@@ -337,8 +333,8 @@ h2{
   align-items: center;
 }
 
-.social-icons-link:hover,
-.social-icons-link:focus{
+.team .social-icons-link:hover,
+.team .social-icons-link:focus{
   background-color: var(--accent-cl);
   color: var(--main-cl);
 }
@@ -413,10 +409,14 @@ footer .logo {
   margin-bottom: 9px;
 }
 
-.conctacts{
+.footer-conctacts{
   display: flex;
-  justify-content: start;
-  align-items: start;
+  align-items: baseline;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
 }
 
 .join{
@@ -440,12 +440,12 @@ footer .logo {
 
 .join .social-icons-link{
  background-color:rgba(255, 255, 255, 0.1);
+ color:var(--main-cl);
 }
 
 .join .social-icons-link:hover,
 .join .social-icons-link:focus{
   background-color: var(--accent-cl);
-  color: var(--main-cl);
 }
 
 .filter-btn {
@@ -466,6 +466,7 @@ footer .logo {
 .filter-btn:focus {
   background-color: var(--accent-cl);
   color: var(--main-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter{
@@ -527,6 +528,11 @@ footer .logo {
 
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .social-icons{
