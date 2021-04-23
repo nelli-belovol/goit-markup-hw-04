@@ -6,7 +6,8 @@
   --dark-bg-cl: #2f303a;
   --team-button-bg: #f5f4fa;
   --footer-link-cl: color: rgba(255, 255, 255, 0.6);
-  --icon-color: rgba(175, 177, 184, 1);
+  --icon-color: #757575;
+  --line-cl: #ECECEC;
 
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
@@ -89,7 +90,18 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
   justify-content: space-between;
+}
 
+.line{
+  display: flex;
+  flex-direction: column;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color:var(--line-cl);
 }
 
 .nav{
@@ -221,6 +233,7 @@ span {
   color: inherit;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   padding: 10px 32px;
 
@@ -261,7 +274,6 @@ h2{
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-
 }
 
 .advantages-item{
@@ -322,10 +334,15 @@ h2{
   margin-bottom: 16px;
 }
 
-.social-icons-link{
-  display: flex;
+.social-icons-item{
   width: 44px;
   height: 44px;
+}
+
+.social-icons-link{
+  display: flex;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color:var(--main-cl);
   color: var(--icon-color);
@@ -430,6 +447,7 @@ footer .logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color:var(--main-cl);
+  margin-bottom: 20px;
 }
 
 .join .social-icons{
