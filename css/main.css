@@ -6,7 +6,7 @@
   --dark-bg-cl: #2f303a;
   --team-button-bg: #f5f4fa;
   --footer-link-cl: color rgba(255, 255, 255, 0.6);
-  --icon-color: #757575;
+  --icon-color: #afb1b8;
   --line-cl: #ececec;
 
   --main-font: 'Roboto', sans-serif;
@@ -226,6 +226,7 @@ span {
   letter-spacing: 0.06em;
   color: inherit;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -371,8 +372,7 @@ s .advantages-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: inherit;
-  height: inherit;
+  height: 100%;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -545,6 +545,7 @@ footer .logo {
 }
 
 .portfolio-link {
+  display: block;
   color: var(--title-cl);
   text-decoration: none;
 }
